@@ -1,18 +1,12 @@
 # Groq Chat Streamlit App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://groqdemo.streamlit.app/)
+**LIVE DEMO ==>**  [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://groqdemo.streamlit.app/) 
 
 ![Demo App Screenshot](images/groq_demo.png)
 
 This [Streamlit](https://streamlit.io/) app integrates with the [Groq API](https://groq.com/) to provide a chat interface where users can interact with advanced language models. It allows users to choose between two models for generating responses, enhancing the flexibility and user experience of the chat application.
 
 It is blazing FAST, try it and see! 🏎️ 💨 💨 💨
-
-**Check out the video tutorial 👇**
-
-<a href="https://youtu.be/WQvinJGYk90">
-  <img src="https://img.youtube.com/vi/WQvinJGYk90/hqdefault.jpg" alt="Watch the video" width="100%">
-</a>
 
 ## Features
 
@@ -37,19 +31,32 @@ It is blazing FAST, try it and see! 🏎️ 💨 💨 💨
 
 - **Set Up Groq API Key**:
 
-  Ensure you have an API key from Groq. This key should be stored securely using Streamlit's secrets management:
+  Ensure you have an [API key](https://console.groq.com/keys) from Groq. This key should be stored securely using Streamlit's secrets management:
+
+  - Create `.streamlit/secrets.toml` file and add the API Key  
 
   ```toml
   # .streamlit/secrets.toml
   GROQ_API_KEY="your_api_key_here"
   ```
 
+- **Create environment**
+  - Creates environment inside project folder itself
+  ```bash
+  conda create -p venv -y 
+  ```
+
+  - Activate the environment using below command
+  ```bash
+  conda activate .\venv
+  ```
+
 - **Run the App**:
   Navigate to the app's directory and run:
 
-```bash
-streamlit run streamlit_app.py
-```
+  ```bash
+  streamlit run app.py
+  ```
 
 ## Usage
 
